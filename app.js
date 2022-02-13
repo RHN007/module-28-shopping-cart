@@ -2,9 +2,9 @@ function updateCaseNumber(IsIncreasing) {
     const caseInput = document.getElementById("case-number");
     let caseNumber = caseInput.value;
     if (IsIncreasing == true) {
-        caseNumber.value = parseInt(caseNumber) + 1;
+        caseNumber = parseInt(caseNumber) + 1;
     } else if (caseNumber > 0) {
-        caseNumber.value = parseInt(caseNumber) - 1;
+        caseNumber = parseInt(caseNumber) - 1;
     }
     caseInput.value = caseNumber;
     //Update Case Total
